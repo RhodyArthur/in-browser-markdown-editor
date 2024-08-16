@@ -19,7 +19,11 @@
     --orange: #E46643;
     --light-orange: #F39765;
 
-    --font-size-medium: 15px;
-    --font-size-small: 14px;
-    --font-size-light: 13px;
+    --font-size-medium: 0.9375rem;
+    --font-size-small: 0.875rem;
+    --font-size-light: 0.8125rem;
 }
+
+/* dark-mode */
+
+/* light mode */

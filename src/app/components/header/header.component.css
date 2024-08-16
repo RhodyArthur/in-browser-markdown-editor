@@ -34,13 +34,15 @@
     color: var(--primary-gray);
 }
 
-.add-btn {
+.add-btn,
+.delete-btn {
     background-color: var(--orange);
     color: var(--white);
     border: none;
     padding: 0.875em 1.25em;
     font-size: var(--font-size-medium);
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .sidebar-file {
@@ -119,6 +121,7 @@
     align-items: center;
     cursor: pointer;
     z-index: 1;
+    background-color: var(--accent-color);
 }
 
 .header-container {
@@ -168,4 +171,31 @@
     border: none;
     flex: 1;
     max-width: calc(100% - 40px);
+}
+
+.confirm-modal {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 1em 1.5em;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-modal h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+}
+
+.confirm-modal p {
+    font-size: var(--font-size-small);
+    margin-bottom: 1em;
+    color: var(--secondary-gray);
+    line-height: 1.5;
 }
