@@ -9,4 +9,13 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  isActive: boolean = false;
+
+  toggleSideBar() {
+    this.isActive = !this.isActive;
+  }
+
+  hideSidebar(){
+    this.isActive = false;
+  }
 }

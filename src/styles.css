@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgColor: #151619;
+    --primary-color: #1D1F22;
+    --secondary-color: #2B2D31;
+    --accent-color: #35393F;
+    --dark-gray: #5A6069;
+    --primary-gray: #7C8187;
+    --secondary-gray: #C1C4CB;
+    --accent-gray: #E4E4E4;
+    --light-gray: #F5F5F5;
+    --white: #FFFFFF;
+    --orange: #E46643;
+    --light-orange: #F39765;
+
+    --font-size-medium: 15px;
+    --font-size-small: 14px;
+    --font-size-light: 13px;
+}
