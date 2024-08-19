@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class EdiotrPaneComponent {
 
+  showPreview:boolean = true;
+
+  togglePane(){
+    this.showPreview = !this.showPreview;
+    console.log('clicked')
+  }
 }

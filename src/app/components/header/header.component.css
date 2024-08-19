@@ -154,6 +154,7 @@
     width: 11.14%;
     height: 71.45%;
     background-color: var(--orange);
+    border-radius: 4px;
     margin-right: .5em;
 }
 
