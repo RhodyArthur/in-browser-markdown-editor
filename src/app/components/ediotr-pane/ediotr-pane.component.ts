@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MarkdownService } from '../../services/markdown.service';
 import { FormsModule } from '@angular/forms';
+import { TogglePaneService } from '../../services/toggle-pane.service';
 
 @Component({
   selector: 'app-ediotr-pane',
@@ -11,14 +12,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class EdiotrPaneComponent {
 
-  showPreview:boolean = true;
   textToConvert:string = ''
   htmlContent:string = ''
 
-  constructor (private markdown: MarkdownService) { }
+  constructor (private markdown: MarkdownService,
+               public togglePaneService: TogglePaneService
+  ) {}
 
-  togglePane(){
-    this.showPreview = !this.showPreview;
+// toggle markdown and preview pane
+  showCurrentPane() {
+    this.togglePaneService.togglePane();
   }
 
   async onInputChange() {
