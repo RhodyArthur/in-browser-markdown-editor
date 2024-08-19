@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --bgColor: #151619;
     --primary-color: #1D1F22;
@@ -22,6 +24,10 @@
     --font-size-medium: 0.9375rem;
     --font-size-small: 0.875rem;
     --font-size-light: 0.8125rem;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* dark-mode */

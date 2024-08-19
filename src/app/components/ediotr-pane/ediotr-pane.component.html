@@ -17,6 +17,6 @@
 </div>
 }
     <div class="editor-pane">
-        <textarea name="editor" id="editor"></textarea>
+        <textarea name="editor" id="editor" [(ngModel)]="textToConvert" (ngModelChange)="onInputChange()"></textarea>
     </div>
 </div>
